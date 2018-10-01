@@ -1,0 +1,3 @@
+rootProject.name = 'IDO'
+
+include ':app'
