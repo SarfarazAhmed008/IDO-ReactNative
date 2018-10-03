@@ -44,7 +44,7 @@ export default class Home extends Component {
             <View style={styles.container}>
                 <StatusBar barStyle="light-content" />
                 <View style={styles.headerContainer}>
-                    <Text style={styles.headerText}>IDO - Application</Text>
+                    <Text style={styles.headerText}>IDO</Text>
                 </View>
                 <ScrollView style={styles.scrollStyle}>
                     {notes}
@@ -52,7 +52,8 @@ export default class Home extends Component {
                 <View style = {styles.footerContainer}>
                     <TextInput 
                         autoCorrect={false}
-                        placeholder = "Enter Note"
+                        placeholder = "> Enter Note"
+                        placeholderTextColor='white'
                         underlineColorAndroid = 'transparent'
                         onChangeText= {this.onChangeInput}
                         value={noteText}
@@ -87,19 +88,19 @@ const styles = StyleSheet.create({
     },
     scrollStyle : {
         flex: 1,
-        marginBottom: 10,
+        marginBottom: 100,
     },
     footerContainer : {
         position: 'absolute',
         bottom: 0,
         left: 0,
         right: 0,
-        zIndex: 10
+        zIndex: 10,
 
     },
     inputStyle: {
         alignSelf: 'stretch',
-        color: '#fff',
+        color: 'white',
         padding: 20,
         backgroundColor: '#252525',
         borderTopWidth:5,

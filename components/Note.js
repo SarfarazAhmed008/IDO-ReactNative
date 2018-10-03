@@ -15,7 +15,7 @@ export default class Note extends Component {
                 <Text style={styles.noteText}>{note.note}</Text>
                 <Text style={styles.noteText}>{note.date}</Text>
                 <TouchableOpacity style={styles.delButton} onPress={this.props.deleteNote}>
-                    <Text style={styles.buttonText}>D</Text>
+                    <Text style={styles.buttonText}>Delete</Text>
                 </TouchableOpacity>
             </View>
         );
@@ -48,6 +48,6 @@ const styles = StyleSheet.create({
 
     },
     buttonText : {
-        color: 'fff',
+        color: 'white',
     },
 });
